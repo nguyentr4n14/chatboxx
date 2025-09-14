@@ -12,7 +12,7 @@ const NODE_ENV = ENV_VARS.NODE_ENV
 
 app.use(express.json())
 app.use(clerkMiddleware()) // req.auth will be available in the request object
-app.use("/api/ingest", serve({ client: inngest, functions }))
+app.use("/api/inngest", serve({ client: inngest, functions }))
 
 app.get("/", (req, res) => {
     res.send("Hello World 1234")
